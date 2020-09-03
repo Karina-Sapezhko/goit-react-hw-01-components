@@ -1,0 +1,30 @@
+.item {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+.status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.online {
+  composes: status;
+  background-color: green;
+}
+.notOnline {
+  composes: status;
+  background-color: red;
+}
+.avatar {
+  border-radius: 5px;
+  margin: 0 20px;
+}
+.name {
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 600;
+}
